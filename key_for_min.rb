@@ -5,6 +5,11 @@ def key_for_min_value(name_hash)
   times_run = 0 
   current_min = 0
   min_key = ""
+  
+  if name_hash == {}
+    return nil 
+  end
+  
   name_hash.each do |key, value|
     if times_run == 0
       current_min = value
